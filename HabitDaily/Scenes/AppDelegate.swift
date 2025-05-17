@@ -7,20 +7,39 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
+        UNUserNotificationCenter.current().delegate = self
+        requestNotificationPermission()
         return true
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
            CoreDataManager.shared.saveContext()
        }
+    
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if let error = error {
+                print("Notification permission error: \(error)")
+            } else {
+                print("Permission Granted")
+            }
+        }
+    }
+    
+    // MARK: - Show notification when app is in foreground
+      func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                  willPresent notification: UNNotification,
+                                  withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+          // Show the banner and play a sound even if the app is open
+          completionHandler([.banner, .sound])
+      }
 
     // MARK: UISceneSession Lifecycle
 

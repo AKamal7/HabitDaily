@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FGT-LC-YYV">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="YeJ-8n-6W6">
             <objects>
-                <tabBarController id="FGT-LC-YYV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="FGT-LC-YYV" customClass="MainTabBarController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tta-e6-tCw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,85 +29,85 @@
             </objects>
             <point key="canvasLocation" x="-476" y="-473"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="XFa-8B-ymZ">
             <objects>
-                <viewController id="hbP-5h-azQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="hbP-5h-azQ" customClass="HomeViewController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9P-6a-Uh8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="iMW-dK-G1y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="PTI-Ls-Uei"/>
+                    <tabBarItem key="tabBarItem" title="" id="PTI-Ls-Uei"/>
                     <navigationItem key="navigationItem" id="mlq-Ml-4SL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ymm-Vc-Eg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565.64885496183206" y="-152.11267605633805"/>
         </scene>
-        <!--My Habits-->
+        <!--My Habits View Controller-->
         <scene sceneID="83n-Mx-STY">
             <objects>
-                <viewController id="rbs-47-HIS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyHabitsViewController" id="rbs-47-HIS" customClass="MyHabitsViewController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e9A-hR-NSZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8De-Jc-1Nj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Habits" image="pencil.and.list.clipboard" catalog="system" selectedImage="pencil.and.list.clipboard" id="cdf-77-uXA"/>
+                    <tabBarItem key="tabBarItem" title="" id="cdf-77-uXA"/>
                     <navigationItem key="navigationItem" id="nT4-d2-qpj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2d-OB-cWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1511" y="-152"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Habit View Controller-->
         <scene sceneID="goY-At-xOT">
             <objects>
-                <viewController id="3ML-0p-1tB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddHabitViewController" id="3ML-0p-1tB" customClass="AddHabitViewController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HIH-Jn-a5R">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="iKh-DX-tLf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" selectedImage="plus" id="NJM-Jr-ebx"/>
+                    <tabBarItem key="tabBarItem" title="" id="NJM-Jr-ebx"/>
                     <navigationItem key="navigationItem" id="P1j-3C-edp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7I1-Zx-Gd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2401" y="-152"/>
         </scene>
-        <!--Stats-->
+        <!--Statistics View Controller-->
         <scene sceneID="Z1j-b5-hF1">
             <objects>
-                <viewController id="yNK-Ml-NfY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StatisticsViewController" id="yNK-Ml-NfY" customClass="StatisticsViewController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcJ-Ve-7cs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="wr9-Rz-jC9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" image="chart.bar.xaxis" catalog="system" selectedImage="chart.bar.xaxis" id="LfZ-ff-SIa"/>
+                    <tabBarItem key="tabBarItem" title="" id="LfZ-ff-SIa"/>
                     <navigationItem key="navigationItem" id="JT4-gW-BDF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ6-ms-4Et" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3334" y="-152"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="Vah-Hd-hEU">
             <objects>
-                <viewController id="WQt-JI-2UW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="WQt-JI-2UW" customClass="SettingsViewController" customModule="HabitDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOr-Qy-BHq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2L9-gK-nFX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" selectedImage="gearshape" id="yr4-CL-vJ6"/>
+                    <tabBarItem key="tabBarItem" title="" id="yr4-CL-vJ6"/>
                     <navigationItem key="navigationItem" id="qmc-L4-8F8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRv-O6-N6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,13 +213,11 @@
         <segue reference="gcW-uy-GtU"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
-        <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="pencil.and.list.clipboard" catalog="system" width="114" height="128"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

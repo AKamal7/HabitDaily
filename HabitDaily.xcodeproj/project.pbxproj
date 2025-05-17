@@ -19,7 +19,6 @@
 		F7E30EB82DD0DA6200AE3ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EAA2DD0DA6200AE3ED4 /* SceneDelegate.swift */; };
 		F7E30EB92DD0DA6200AE3ED4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EAB2DD0DA6200AE3ED4 /* SettingsViewController.swift */; };
 		F7E30EBA2DD0DA6200AE3ED4 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EAC2DD0DA6200AE3ED4 /* StatisticsViewController.swift */; };
-		F7E30EBB2DD0DA6200AE3ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EAD2DD0DA6200AE3ED4 /* ViewController.swift */; };
 		F7E30EBC2DD0DA6200AE3ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E30E9E2DD0DA6200AE3ED4 /* Assets.xcassets */; };
 		F7E30EBE2DD0DA6200AE3ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E30EA52DD0DA6200AE3ED4 /* LaunchScreen.storyboard */; };
 		F7E30EBF2DD0DA6200AE3ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E30EA72DD0DA6200AE3ED4 /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 		F7E30EAA2DD0DA6200AE3ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F7E30EAB2DD0DA6200AE3ED4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F7E30EAC2DD0DA6200AE3ED4 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		F7E30EAD2DD0DA6200AE3ED4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7E30EAF2DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +55,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73A0F932DD3144200F8E57D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F7E30E9F2DD0DA6200AE3ED4 /* CoreDataManager.swift */,
+				F7E30EA02DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift */,
+				F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */,
+				F7E30EA12DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F73A0F942DD3148100F8E57D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7E30EA82DD0DA6200AE3ED4 /* MainTabBarController.swift */,
+				F7E30EA22DD0DA6200AE3ED4 /* HomeViewController.swift */,
+				F7E30EA92DD0DA6200AE3ED4 /* MyHabitsViewController.swift */,
+				F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */,
+				F7E30EAB2DD0DA6200AE3ED4 /* SettingsViewController.swift */,
+				F7E30EAC2DD0DA6200AE3ED4 /* StatisticsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F73A0F952DD314A100F8E57D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F7E30EA72DD0DA6200AE3ED4 /* Main.storyboard */,
+				F7E30EA52DD0DA6200AE3ED4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F7A21AEE2DD0C70A004606BA = {
 			isa = PBXGroup;
 			children = (
@@ -73,33 +104,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7D713F42DD3138100CA86DE /* New Group */ = {
+		F7D713F42DD3138100CA86DE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				F7E30E9D2DD0DA6200AE3ED4 /* AppDelegate.swift */,
 				F7E30EAA2DD0DA6200AE3ED4 /* SceneDelegate.swift */,
 			);
-			path = "New Group";
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		F7E30EAE2DD0DA6200AE3ED4 /* HabitDaily */ = {
 			isa = PBXGroup;
 			children = (
-				F7D713F42DD3138100CA86DE /* New Group */,
-				F7E30E9F2DD0DA6200AE3ED4 /* CoreDataManager.swift */,
-				F7E30EA12DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld */,
-				F7E30EA22DD0DA6200AE3ED4 /* HomeViewController.swift */,
+				F7D713F42DD3138100CA86DE /* Scenes */,
+				F73A0F932DD3144200F8E57D /* CoreData */,
+				F73A0F942DD3148100F8E57D /* ViewControllers */,
+				F73A0F952DD314A100F8E57D /* Storyboards */,
 				F7E30EA32DD0DA6200AE3ED4 /* Info.plist */,
-				F7E30EA52DD0DA6200AE3ED4 /* LaunchScreen.storyboard */,
-				F7E30EA72DD0DA6200AE3ED4 /* Main.storyboard */,
-				F7E30EA82DD0DA6200AE3ED4 /* MainTabBarController.swift */,
-				F7E30EA92DD0DA6200AE3ED4 /* MyHabitsViewController.swift */,
-				F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */,
-				F7E30EAB2DD0DA6200AE3ED4 /* SettingsViewController.swift */,
-				F7E30EAC2DD0DA6200AE3ED4 /* StatisticsViewController.swift */,
-				F7E30EAD2DD0DA6200AE3ED4 /* ViewController.swift */,
-				F7E30EA02DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift */,
-				F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */,
 				F7E30E9E2DD0DA6200AE3ED4 /* Assets.xcassets */,
 			);
 			path = HabitDaily;
@@ -190,7 +211,6 @@
 				F7E30EB82DD0DA6200AE3ED4 /* SceneDelegate.swift in Sources */,
 				F7E30EB92DD0DA6200AE3ED4 /* SettingsViewController.swift in Sources */,
 				F7E30EBA2DD0DA6200AE3ED4 /* StatisticsViewController.swift in Sources */,
-				F7E30EBB2DD0DA6200AE3ED4 /* ViewController.swift in Sources */,
 				F7E30E9A2DD0D96100AE3ED4 /* Habit+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

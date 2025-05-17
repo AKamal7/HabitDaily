@@ -72,6 +72,30 @@ class AddHabitViewController: UIViewController {
         } else {
             tabBarController?.selectedIndex = 1
         }
+        
+        scheduleReminderNotification(for: nameField.text ?? "Your Habit", at: reminderPicker.date)
+
+    }
+    
+    func scheduleReminderNotification(for habitName: String, at date: Date) {
+        let content = UNMutableNotificationContent()
+        content.title = "Habit Reminder"
+        content.body = "Don't forget to complete your habit: \(habitName)"
+        content.sound = .default
+
+        let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+
+        let identifier = UUID().uuidString // You can save this if you want to cancel later
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Failed to schedule notification: \(error)")
+            } else {
+                print("Notification scheduled for \(date)")
+            }
+        }
     }
 
 }
