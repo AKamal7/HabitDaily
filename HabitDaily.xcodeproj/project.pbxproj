@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73A0F9A2DD8CC0700F8E57D /* StreakTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73A0F992DD8CC0700F8E57D /* StreakTableViewCell.xib */; };
+		F73A0F9B2DD8CC0700F8E57D /* StreakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0F982DD8CC0700F8E57D /* StreakTableViewCell.swift */; };
+		F73A0F9D2DDA183100F8E57D /* EmojiPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0F9C2DDA183100F8E57D /* EmojiPickerViewController.swift */; };
 		F7E30E9A2DD0D96100AE3ED4 /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */; };
 		F7E30EB02DD0DA6200AE3ED4 /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */; };
 		F7E30EB12DD0DA6200AE3ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E9D2DD0DA6200AE3ED4 /* AppDelegate.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F73A0F982DD8CC0700F8E57D /* StreakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTableViewCell.swift; sourceTree = "<group>"; };
+		F73A0F992DD8CC0700F8E57D /* StreakTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreakTableViewCell.xib; sourceTree = "<group>"; };
+		F73A0F9C2DDA183100F8E57D /* EmojiPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerViewController.swift; sourceTree = "<group>"; };
 		F7A21AF72DD0C70A004606BA /* HabitDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */,
 				F7E30EAB2DD0DA6200AE3ED4 /* SettingsViewController.swift */,
 				F7E30EAC2DD0DA6200AE3ED4 /* StatisticsViewController.swift */,
+				F73A0F982DD8CC0700F8E57D /* StreakTableViewCell.swift */,
+				F73A0F992DD8CC0700F8E57D /* StreakTableViewCell.xib */,
+				F73A0F9C2DDA183100F8E57D /* EmojiPickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E30EBC2DD0DA6200AE3ED4 /* Assets.xcassets in Resources */,
+				F73A0F9A2DD8CC0700F8E57D /* StreakTableViewCell.xib in Resources */,
 				F7E30EBE2DD0DA6200AE3ED4 /* LaunchScreen.storyboard in Resources */,
 				F7E30EBF2DD0DA6200AE3ED4 /* Main.storyboard in Resources */,
 			);
@@ -203,7 +213,9 @@
 				F7E30EB02DD0DA6200AE3ED4 /* AddHabitViewController.swift in Sources */,
 				F7E30EB12DD0DA6200AE3ED4 /* AppDelegate.swift in Sources */,
 				F7E30EB22DD0DA6200AE3ED4 /* CoreDataManager.swift in Sources */,
+				F73A0F9B2DD8CC0700F8E57D /* StreakTableViewCell.swift in Sources */,
 				F7E30EB32DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift in Sources */,
+				F73A0F9D2DDA183100F8E57D /* EmojiPickerViewController.swift in Sources */,
 				F7E30EB42DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld in Sources */,
 				F7E30EB52DD0DA6200AE3ED4 /* HomeViewController.swift in Sources */,
 				F7E30EB62DD0DA6200AE3ED4 /* MainTabBarController.swift in Sources */,

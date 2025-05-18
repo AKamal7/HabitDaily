@@ -53,10 +53,21 @@ class MyHabitsViewController: UIViewController, UITableViewDataSource, UITableVi
            return cell
        }
 
-       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           let vc = AddHabitViewController()
-           vc.editingHabit = habits[indexPath.row]
-           navigationController?.pushViewController(vc, animated: true)
-       }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let habit = habits[indexPath.row]
+        let vc = AddHabitViewController()
+        vc.editingHabit = habit
+        vc.onSave = { [weak self] in
+            self?.loadHabits()
+        }
+
+        let navVC = UINavigationController(rootViewController: vc)
+        if let sheet = navVC.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+        }
+
+        present(navVC, animated: true)
+    }
 
 }
