@@ -33,11 +33,17 @@ class MyHabitsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadHabits()
+      
 
     }
 
        func loadHabits() {
            habits = CoreDataManager.shared.fetchHabits()
+           let completedHabits = CoreDataManager.shared.fetchHabitsCompleted()
+           for habit in completedHabits {
+               print(habit.date, habit.habit?.name)
+               
+           }
            tableView.reloadData()
        }
 
@@ -68,6 +74,29 @@ class MyHabitsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
 
         present(navVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let habit = habits[indexPath.row]
+
+        // Delete Action
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [weak self] (_, _, completionHandler) in
+            CoreDataManager.shared.deleteHabit(habit)
+            self?.habits.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            completionHandler(true)
+        }
+
+        // Mark as Done Action
+        let doneAction = UIContextualAction(style: .normal, title: "Done") { [weak self] (_, _, completionHandler) in
+            CoreDataManager.shared.markHabitAsDone(habit) // Implement this in CoreDataManager
+            completionHandler(true)
+        }
+
+        doneAction.backgroundColor = UIColor.systemGreen
+
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction, doneAction])
+        return configuration
     }
 
 }

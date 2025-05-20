@@ -9,15 +9,28 @@ import UIKit
 
 class StreakTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+      @IBOutlet weak var streakLabel: UILabel!
+      @IBOutlet weak var statusImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+   
+    
+    func configure(with habit: Habit) {
+        nameLabel.text = habit.name ?? "No Name"
+        streakLabel.text = "🔥 \(habit.streakCount) Days"
 
-        // Configure the view for the selected state
+        if habit.isCompletedToday() {
+            statusImageView.image = UIImage(systemName: "checkmark.circle.fill")
+            statusImageView.tintColor = .systemGreen
+        } else {
+            statusImageView.image = UIImage(systemName: "circle")
+            statusImageView.tintColor = .black
+        }
     }
     
 }

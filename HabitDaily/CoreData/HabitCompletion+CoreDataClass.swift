@@ -1,5 +1,5 @@
 //
-//  Habit+CoreDataClass.swift
+//  HabitCompletion+CoreDataClass.swift
 //  HabitDaily
 //
 //  Created by ahmedkamal on 19/05/2025.
@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class Habit: NSManagedObject {
+public class HabitCompletion: NSManagedObject {
 
 }

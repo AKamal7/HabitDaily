@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB141C2C019DC5F1171DEEC8 /* Pods_HabitDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960E13E1A4FDDDB542A7AAA3 /* Pods_HabitDaily.framework */; };
+		F711E9092DDBFE0300991C38 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711E9082DDBFE0300991C38 /* DesignableView.swift */; };
 		F73A0F9A2DD8CC0700F8E57D /* StreakTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73A0F992DD8CC0700F8E57D /* StreakTableViewCell.xib */; };
 		F73A0F9B2DD8CC0700F8E57D /* StreakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0F982DD8CC0700F8E57D /* StreakTableViewCell.swift */; };
 		F73A0F9D2DDA183100F8E57D /* EmojiPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0F9C2DDA183100F8E57D /* EmojiPickerViewController.swift */; };
-		F7E30E9A2DD0D96100AE3ED4 /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */; };
+		F73A0FC62DDB804C00F8E57D /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0FC22DDB804C00F8E57D /* Habit+CoreDataClass.swift */; };
+		F73A0FC72DDB804C00F8E57D /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0FC32DDB804C00F8E57D /* Habit+CoreDataProperties.swift */; };
+		F73A0FC82DDB804C00F8E57D /* HabitCompletion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0FC42DDB804C00F8E57D /* HabitCompletion+CoreDataClass.swift */; };
+		F73A0FC92DDB804C00F8E57D /* HabitCompletion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A0FC52DDB804C00F8E57D /* HabitCompletion+CoreDataProperties.swift */; };
 		F7E30EB02DD0DA6200AE3ED4 /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */; };
 		F7E30EB12DD0DA6200AE3ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E9D2DD0DA6200AE3ED4 /* AppDelegate.swift */; };
 		F7E30EB22DD0DA6200AE3ED4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30E9F2DD0DA6200AE3ED4 /* CoreDataManager.swift */; };
-		F7E30EB32DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EA02DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift */; };
 		F7E30EB42DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EA12DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld */; };
 		F7E30EB52DD0DA6200AE3ED4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EA22DD0DA6200AE3ED4 /* HomeViewController.swift */; };
 		F7E30EB62DD0DA6200AE3ED4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30EA82DD0DA6200AE3ED4 /* MainTabBarController.swift */; };
@@ -28,16 +32,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960E13E1A4FDDDB542A7AAA3 /* Pods_HabitDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3ED70A778B1E110DA2427AE /* Pods-HabitDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitDaily.debug.xcconfig"; path = "Target Support Files/Pods-HabitDaily/Pods-HabitDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		F711E9082DDBFE0300991C38 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		F73A0F982DD8CC0700F8E57D /* StreakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTableViewCell.swift; sourceTree = "<group>"; };
 		F73A0F992DD8CC0700F8E57D /* StreakTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreakTableViewCell.xib; sourceTree = "<group>"; };
 		F73A0F9C2DDA183100F8E57D /* EmojiPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerViewController.swift; sourceTree = "<group>"; };
+		F73A0FC22DDB804C00F8E57D /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73A0FC32DDB804C00F8E57D /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73A0FC42DDB804C00F8E57D /* HabitCompletion+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitCompletion+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73A0FC52DDB804C00F8E57D /* HabitCompletion+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitCompletion+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F7623983531ECD95BCBC48B6 /* Pods-HabitDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitDaily.release.xcconfig"; path = "Target Support Files/Pods-HabitDaily/Pods-HabitDaily.release.xcconfig"; sourceTree = "<group>"; };
 		F7A21AF72DD0C70A004606BA /* HabitDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F7E30E9C2DD0DA6200AE3ED4 /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
 		F7E30E9D2DD0DA6200AE3ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7E30E9E2DD0DA6200AE3ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E30E9F2DD0DA6200AE3ED4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		F7E30EA02DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F7E30EA22DD0DA6200AE3ED4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F7E30EA32DD0DA6200AE3ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7E30EA42DD0DA6200AE3ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,18 +65,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB141C2C019DC5F1171DEEC8 /* Pods_HabitDaily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066CA77815D0D1DD66BF70A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3ED70A778B1E110DA2427AE /* Pods-HabitDaily.debug.xcconfig */,
+				F7623983531ECD95BCBC48B6 /* Pods-HabitDaily.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DF3B448294BE8A995972D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960E13E1A4FDDDB542A7AAA3 /* Pods_HabitDaily.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F73A0F932DD3144200F8E57D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				F7E30E9F2DD0DA6200AE3ED4 /* CoreDataManager.swift */,
-				F7E30EA02DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift */,
-				F7E30E982DD0D96100AE3ED4 /* Habit+CoreDataClass.swift */,
+				F73A0FC22DDB804C00F8E57D /* Habit+CoreDataClass.swift */,
+				F73A0FC32DDB804C00F8E57D /* Habit+CoreDataProperties.swift */,
+				F73A0FC42DDB804C00F8E57D /* HabitCompletion+CoreDataClass.swift */,
+				F73A0FC52DDB804C00F8E57D /* HabitCompletion+CoreDataProperties.swift */,
 				F7E30EA12DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -102,6 +132,8 @@
 			children = (
 				F7E30EAE2DD0DA6200AE3ED4 /* HabitDaily */,
 				F7A21AF82DD0C70A004606BA /* Products */,
+				066CA77815D0D1DD66BF70A9 /* Pods */,
+				6DF3B448294BE8A995972D98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,9 +154,18 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		F7D8E3AD2DDBF9C800869BDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F711E9082DDBFE0300991C38 /* DesignableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F7E30EAE2DD0DA6200AE3ED4 /* HabitDaily */ = {
 			isa = PBXGroup;
 			children = (
+				F7D8E3AD2DDBF9C800869BDF /* Extensions */,
 				F7D713F42DD3138100CA86DE /* Scenes */,
 				F73A0F932DD3144200F8E57D /* CoreData */,
 				F73A0F942DD3148100F8E57D /* ViewControllers */,
@@ -142,17 +183,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7A21B0D2DD0C70C004606BA /* Build configuration list for PBXNativeTarget "HabitDaily" */;
 			buildPhases = (
+				5BC3D5A320F4F0BE37263EDB /* [CP] Check Pods Manifest.lock */,
 				F7A21AF32DD0C70A004606BA /* Sources */,
 				F7A21AF42DD0C70A004606BA /* Frameworks */,
 				F7A21AF52DD0C70A004606BA /* Resources */,
+				2D52231393569955920D32B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HabitDaily;
-			packageProductDependencies = (
-			);
 			productName = HabitDaily;
 			productReference = F7A21AF72DD0C70A004606BA /* HabitDaily.app */;
 			productType = "com.apple.product-type.application";
@@ -205,16 +246,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D52231393569955920D32B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitDaily/Pods-HabitDaily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitDaily/Pods-HabitDaily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitDaily/Pods-HabitDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BC3D5A320F4F0BE37263EDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitDaily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7A21AF32DD0C70A004606BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73A0FC62DDB804C00F8E57D /* Habit+CoreDataClass.swift in Sources */,
+				F73A0FC72DDB804C00F8E57D /* Habit+CoreDataProperties.swift in Sources */,
+				F73A0FC82DDB804C00F8E57D /* HabitCompletion+CoreDataClass.swift in Sources */,
+				F73A0FC92DDB804C00F8E57D /* HabitCompletion+CoreDataProperties.swift in Sources */,
 				F7E30EB02DD0DA6200AE3ED4 /* AddHabitViewController.swift in Sources */,
 				F7E30EB12DD0DA6200AE3ED4 /* AppDelegate.swift in Sources */,
 				F7E30EB22DD0DA6200AE3ED4 /* CoreDataManager.swift in Sources */,
 				F73A0F9B2DD8CC0700F8E57D /* StreakTableViewCell.swift in Sources */,
-				F7E30EB32DD0DA6200AE3ED4 /* Habit+CoreDataProperties.swift in Sources */,
+				F711E9092DDBFE0300991C38 /* DesignableView.swift in Sources */,
 				F73A0F9D2DDA183100F8E57D /* EmojiPickerViewController.swift in Sources */,
 				F7E30EB42DD0DA6200AE3ED4 /* HabitDataModel.xcdatamodeld in Sources */,
 				F7E30EB52DD0DA6200AE3ED4 /* HomeViewController.swift in Sources */,
@@ -223,7 +310,6 @@
 				F7E30EB82DD0DA6200AE3ED4 /* SceneDelegate.swift in Sources */,
 				F7E30EB92DD0DA6200AE3ED4 /* SettingsViewController.swift in Sources */,
 				F7E30EBA2DD0DA6200AE3ED4 /* StatisticsViewController.swift in Sources */,
-				F7E30E9A2DD0D96100AE3ED4 /* Habit+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +337,14 @@
 /* Begin XCBuildConfiguration section */
 		F7A21B0E2DD0C70C004606BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3ED70A778B1E110DA2427AE /* Pods-HabitDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DVZDRKM39W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HabitDaily/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -279,12 +367,14 @@
 		};
 		F7A21B0F2DD0C70C004606BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7623983531ECD95BCBC48B6 /* Pods-HabitDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DVZDRKM39W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HabitDaily/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
